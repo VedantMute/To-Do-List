@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;   
+    font-family: 'IBM Plex Mono', monospace;
+}
+body{
+    background-image: linear-gradient(to right, #6262ff48, #23a8f4);
+}
+h2{
+    padding: 15px;
+text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    
+}
+.innerContainer{
+    box-shadow: -8px -8px 15px rgba(225, 255, 255, 0.064), 5px 5px 15px rgba(0, 0, 0, 0.25);
+    padding: 0px 20px 20px 20px;
+    border-radius: 5px;
+}
+#newtask{
+    padding: 30px 20px;
+}
+#newtask input{
+    width: 500px;
+    height: 45px;
+    font-size: 15px;
+    padding: 0px 0px 0px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    
+}
+#newtask button{
+    margin-left: 20px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    height: 45px;
+    width: 50px;
+    background: transparent;
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    
+}
+#tasks{
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 618.8px;
+    position: relative;
+}
+.task{
+    background-color: #3d91c9;
+    color: white;
+    height: 50px;
+	margin-bottom: 8px;
+    padding: 5px 10px 0px 7px;
+    display: flex;
+	border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+input[type=checkbox]:checked+span{
+    text-decoration: line-through;
+}
+
+.task button{
+    
+    border: none;
+    cursor: pointer;
+    outline: none;
+    height: 35px;
+    width: 50px;
+    background-color: #0a2ea476;
+    color: white;
+    border-radius: 5px;
+    margin-right: 8px;
+}
